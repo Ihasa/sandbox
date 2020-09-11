@@ -13,5 +13,6 @@ extern void Rat_sub(Rational*, Rational*, Rational*);
 extern void Rat_mul(Rational*, Rational*, Rational*);
 extern void Rat_div(Rational*, Rational*, Rational*);
 extern unsigned char Rat_getFloatValue(Rational*, float*);
+extern void Rat_reduction(Rational*);
 
 #endif
