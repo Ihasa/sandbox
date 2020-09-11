@@ -14,36 +14,44 @@ void Rat_init(int numer, int denom, Rational* result) {
     result->denom = (denom >= 0) ? denom : -denom;
 }
 
+static void rat_add_nosig(Rational* r1, Rational* r2, Rational* result){
+    result->numer = r1->numer*r2->denom + r2->numer*r1->denom;
+    result->denom = r1->denom * r2->denom;
+}
+
+static void rat_sub_nosig(Rational* r1, Rational* r2, Rational* result){
+    int tmp_numer;
+    tmp_numer = r1->numer*r2->denom - r2->numer*r1->denom;
+    if(tmp_numer >= 0){
+        result->numer = tmp_numer;
+    } else {
+        result -> numer = -tmp_numer;
+    }
+    result -> denom = r1->denom * r2->denom;
+}
+
+static int rat_compare_nosig(Rational* r1, Rational* r2){
+    return (((r1->numer*r2->denom) > r2->numer*r1->denom) ? r1->sig : r2->sig);
+}
+
 void Rat_add(Rational* r1, Rational* r2, Rational* result) {
+    Rational* r3;
     if(r1->sig == r2->sig){
         result->sig = r1->sig;
-        result->numer = r1->numer*r2->denom + r2->numer*r1->denom;
-        result->denom = r1->denom * r2->denom;
+        rat_add_nosig(r1, r2, result);
     } else {
-        if(r2->sig == -1){
-            r2->sig = 1;
-            Rat_sub(r1,r2,result);
-        } else {
-            r1->sig = 1;
-            Rat_sub(r2,r1,result);
-        }
+        result->sig = rat_compare_nosig(r1,r2);
+        rat_sub_nosig(r1,r2,result);
     }
 }
 void Rat_sub(Rational* r1, Rational* r2, Rational* result) {
-    int tmp_numer;
+    Rational r3;
     if(r1->sig == r2->sig){
-        tmp_numer = r1->numer*r2->denom - r2->numer*r1->denom;
-        if(tmp_numer >= 0){
-            result->sig = 1;
-            result->numer = tmp_numer;
-        } else {
-            result->sig = -1;
-            result -> numer = -tmp_numer;
-        }
-        result -> denom = r1->denom * r2->denom;
+        result->sig = rat_compare_nosig(r1,r2);
+        rat_sub_nosig(r1,r2,result);
     } else {
-        r2->sig = -r2->sig;
-        Rat_add(r1,r2,result);
+        result->sig = r1->sig;
+        rat_add_nosig(r1,r2,result);
     }
 }
 void Rat_mul(Rational* r1, Rational* r2, Rational* result) {
