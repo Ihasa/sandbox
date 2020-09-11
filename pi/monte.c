@@ -10,10 +10,12 @@ bool isInCircle(float,float);
 
 void main(){
     float x,y;
+    float _piSum;
     float _pi;
-    unsigned int i;
+    unsigned int iTry, iSample;
     unsigned int trynum;
-    unsigned int _inCircle=0, _inSquare=0;
+    unsigned int samplenum;
+    unsigned int _inCircle, _inSquare;
     unsigned int randseed;
     
     printf("seed?:");
@@ -24,19 +26,28 @@ void main(){
     scanf("%d", &trynum);
     trynum = (trynum > TRYMAX) ? TRYMAX : trynum;
 
-    for(i = 0; i < trynum; i++){
-        x = getRandPos();
-        y = getRandPos();
-        if(isInCircle(x, y) == true){
-            _inCircle++;
-            _inSquare++;
-        } else {
-            _inSquare++;
+    printf("samples?:");
+    scanf("%d", &samplenum);
+
+    _piSum = 0;
+    for(iSample = 0; iSample < samplenum; iSample++){
+        _inCircle = 0;
+        _inSquare = 0;
+        for(iTry = 0; iTry < trynum; iTry++){
+            x = getRandPos();
+            y = getRandPos();
+            if(isInCircle(x, y) == true){
+                _inCircle++;
+                _inSquare++;
+            } else {
+                _inSquare++;
+            }
         }
+        _piSum += 4.0f * (float)_inCircle / _inSquare;
     }
 
     printf("%d, %d\n", _inCircle, _inSquare);
-    _pi = 4.0f * (float)_inCircle / _inSquare;
+    _pi = _piSum / samplenum;
     printf("PI = %f\n", _pi);
 }
 
