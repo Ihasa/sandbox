@@ -11,7 +11,8 @@ bool isInCircle(float,float);
 void main(){
     float x,y;
     float _pi;
-    int i;
+    unsigned int i;
+    unsigned int trynum;
     unsigned int _inCircle=0, _inSquare=0;
     unsigned int randseed;
     
@@ -19,7 +20,11 @@ void main(){
     scanf("%d",&randseed);
     srand(randseed);
 
-    for(i = 0; i < TRYMAX; i++){
+    printf("tries?:");
+    scanf("%d", &trynum);
+    trynum = (trynum > TRYMAX) ? TRYMAX : trynum;
+
+    for(i = 0; i < trynum; i++){
         x = getRandPos();
         y = getRandPos();
         if(isInCircle(x, y) == true){
