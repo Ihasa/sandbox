@@ -1,0 +1,216 @@
+[14:03:26] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:03:28] [Render thread/INFO]: Setting user: UrbanShiitake
+[14:03:28] [Render thread/INFO]: Backend library: LWJGL version 3.2.2 build 10
+[14:03:42] [Render thread/INFO]: Narrator library for x64 successfully loaded
+[14:03:43] [Render thread/INFO]: Reloading ResourceManager: Programmer Art, Default
+[14:03:54] [Render thread/INFO]: OpenAL initialized.
+[14:03:54] [Render thread/INFO]: Sound engine started
+[14:03:54] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[14:03:55] [Render thread/INFO]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[14:03:55] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[14:03:55] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[14:03:55] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[14:03:55] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[14:03:55] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[14:03:58] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[14:03:58] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[14:03:58] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[14:11:03] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:11:03] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:11:03] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:11:03] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:11:03] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:11:03] [Render thread/INFO]: Reloading ResourceManager: Default
+[14:11:04] [Render thread/INFO]: Loaded 7 recipes
+[14:11:04] [Render thread/INFO]: Loaded 1053 advancements
+[14:11:20] [pool-4-thread-1/INFO]: World optimizaton finished after 15639 ms
+[14:12:59] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:12:59] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:12:59] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:12:59] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:12:59] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:12:59] [Render thread/INFO]: Reloading ResourceManager: Default
+[14:13:00] [Render thread/INFO]: Loaded 7 recipes
+[14:13:00] [Render thread/INFO]: Loaded 1053 advancements
+[14:13:01] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:13:01] [Server thread/INFO]: Starting integrated minecraft server version 21w08b
+[14:13:01] [Server thread/INFO]: Generating keypair
+[14:13:01] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:13:02] [Render thread/INFO]: スポーン地点を準備中：0%
+[14:13:02] [Render thread/INFO]: スポーン地点を準備中：0%
+[14:13:02] [Render thread/INFO]: スポーン地点を準備中：10%
+[14:13:03] [Render thread/INFO]: Time elapsed: 1841 ms
+[14:13:03] [Server thread/INFO]: Changing view distance to 9, from 10
+[14:13:05] [Server thread/INFO]: UrbanShiitake[local:E:d491f9ee] logged in with entity id 247 at (98.83303499550537, 73.0, -202.69999998807907)
+[14:13:05] [Server thread/INFO]: UrbanShiitakeがゲームに参加しました
+[14:13:08] [Server thread/INFO]: Saving and pausing game...
+[14:13:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[14:13:08] [Render thread/INFO]: Loaded 576 advancements
+[14:13:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[14:13:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[14:13:12] [Server thread/INFO]: Saving and pausing game...
+[14:13:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[14:13:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[14:13:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[14:15:17] [Server thread/INFO]: Saving and pausing game...
+[14:15:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[14:15:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[14:15:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[14:16:31] [Server thread/INFO]: Saving and pausing game...
+[14:16:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[14:16:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[14:16:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[14:16:41] [Render thread/WARN]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
+[14:17:15] [Render thread/INFO]: Loaded 582 advancements
+[14:18:11] [Server thread/INFO]: Saving and pausing game...
+[14:18:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[14:18:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[14:18:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[14:20:42] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[14:24:50] [Render thread/INFO]: Loaded 583 advancements
+[14:32:00] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[14:36:54] [Server thread/INFO]: Saving and pausing game...
+[14:36:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[14:36:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[14:36:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[14:43:02] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[15:10:35] [Server thread/INFO]: Saving and pausing game...
+[15:10:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[15:10:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[15:10:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[15:25:43] [Server thread/INFO]: Saving and pausing game...
+[15:25:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[15:25:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[15:25:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[15:58:31] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[16:00:47] [Render thread/WARN]: Unable to play empty soundEvent: minecraft:entity.cod.ambient
+[16:09:13] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[16:10:55] [Server thread/INFO]: Saving and pausing game...
+[16:10:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[16:10:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[16:10:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[16:19:48] [Server thread/INFO]: Saving and pausing game...
+[16:19:48] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[16:19:48] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[16:19:48] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[16:35:08] [Render thread/INFO]: Loaded 585 advancements
+[16:35:53] [Render thread/INFO]: Loaded 588 advancements
+[16:40:10] [Server thread/INFO]: UrbanShiitakeは進捗[町のお薬屋さん]を達成した
+[16:40:10] [Render thread/INFO]: [CHAT] UrbanShiitakeは進捗[町のお薬屋さん]を達成した
+[16:40:10] [Render thread/INFO]: Loaded 588 advancements
+[16:40:52] [Server thread/INFO]: Saving and pausing game...
+[16:40:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[16:40:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[16:40:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[16:51:44] [Server thread/INFO]: Saving and pausing game...
+[16:51:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[16:51:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[16:51:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[16:57:07] [Server thread/INFO]: Saving and pausing game...
+[16:57:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[16:57:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[16:57:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[17:00:56] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[17:11:50] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[17:15:53] [Server thread/INFO]: Saving and pausing game...
+[17:15:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[17:15:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[17:15:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[17:18:27] [Server thread/INFO]: Villager bhr['村人'/38216, l='ServerLevel[21w06atest]', x=57.70, y=65.00, z=-743.70] died, message: '村人は壁の中で窒息した'
+[17:18:27] [Render thread/INFO]: Villager bhr['村人'/38216, l='ClientLevel', x=57.70, y=65.05, z=-743.70] died, message: '村人は死んだ'
+[17:22:47] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[17:55:12] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[18:07:03] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[18:34:40] [Server thread/INFO]: Saving and pausing game...
+[18:34:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[18:34:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[18:34:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[18:43:26] [Server thread/INFO]: Saving and pausing game...
+[18:43:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[18:43:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[18:43:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[18:45:17] [Render thread/INFO]: Loaded 590 advancements
+[18:49:43] [Server thread/INFO]: Saving and pausing game...
+[18:49:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[18:49:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[18:49:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[18:59:59] [Server thread/INFO]: Saving and pausing game...
+[18:59:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:00:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:00:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:04:21] [Render thread/INFO]: Loaded 591 advancements
+[19:05:43] [Server thread/INFO]: Saving and pausing game...
+[19:05:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:05:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:05:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:09:06] [Render thread/INFO]: Loaded 593 advancements
+[19:09:56] [Server thread/INFO]: Saving and pausing game...
+[19:09:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:09:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:09:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:12:12] [Render thread/INFO]: [CHAT] スクリーンショットをファイル名2021-02-28_19.12.12.pngとして保存しました
+[19:17:54] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[19:20:42] [Server thread/INFO]: Saving and pausing game...
+[19:20:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:20:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:20:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:21:03] [Render thread/INFO]: Loaded 593 advancements
+[19:24:27] [Server thread/INFO]: Saving and pausing game...
+[19:24:27] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:24:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:24:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:28:54] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[19:29:48] [Render thread/INFO]: Loaded 594 advancements
+[19:31:02] [Server thread/INFO]: Saving and pausing game...
+[19:31:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:31:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:31:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:33:10] [Server thread/INFO]: Villager bhr['農民'/81978, l='ServerLevel[21w06atest]', x=73.30, y=67.00, z=-766.49] died, message: '農民はゾンビに殺害された'
+[19:34:50] [Server thread/INFO]: Saving and pausing game...
+[19:34:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:34:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:34:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:36:05] [Render thread/INFO]: Loaded 595 advancements
+[19:37:53] [Server thread/INFO]: Saving and pausing game...
+[19:37:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:37:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:37:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:39:28] [Render thread/INFO]: [CHAT] スクリーンショットをファイル名2021-02-28_19.39.28.pngとして保存しました
+[19:40:04] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[19:44:22] [Server thread/INFO]: Saving and pausing game...
+[19:44:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:44:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:44:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:52:45] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[20:03:42] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[20:13:08] [Render thread/INFO]: Loaded 596 advancements
+[20:13:18] [Render thread/INFO]: Loaded 597 advancements
+[20:14:12] [Server thread/INFO]: Saving and pausing game...
+[20:14:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[20:14:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[20:14:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[20:14:29] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[20:15:35] [Server thread/INFO]: Saving and pausing game...
+[20:15:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[20:15:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[20:15:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[20:18:55] [Server thread/INFO]: Saving and pausing game...
+[20:18:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[20:18:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[20:18:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[20:18:56] [Server thread/INFO]: UrbanShiitake lost connection: 切断されました
+[20:18:56] [Server thread/INFO]: UrbanShiitakeがゲームを退出しました
+[20:18:56] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[20:18:56] [Server thread/INFO]: Stopping server
+[20:18:56] [Server thread/INFO]: Saving players
+[20:18:56] [Server thread/INFO]: Saving worlds
+[20:18:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[20:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (21w06atest): All chunks are saved
+[20:18:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[20:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:18:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[20:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (21w06atest): All chunks are saved
+[20:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:19:14] [Render thread/INFO]: Stopping!
