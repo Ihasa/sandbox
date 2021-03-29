@@ -125,6 +125,28 @@ grep -E -e "\[16:.*\]" latest.log | sed 4\!d
 ex:最初のログと最後のログだけ残す
 sed -n -e 1p -e \$p latest.log
 
-TODO:以下
+ex:6つ目のSaving chunksが行われた時刻を取得
+grep -E "Saving chunks" latest.log | sed -n -E -e 's/^\[(..:..:..)\].*/\1/g' -e 6p
+
+◆行番号取ってくる系
+ex:6つ目のSaving chunksの後の3つのログを取得
+LINE_BEGIN=`grep -n -E "Saving chunks" latest.log | sed -E -e s/:.*// -n -e 6p` #6つ目のSaving chunksの行番号を取得
+sed -n ${LINE_BEGIN},$((${LINE_BEGIN}+3))p latest.log #6つ目のSaving chunksの行とその後ろの3行分を出力
+
 ex:5つ目のSaving chunksより前のログを削除
+LINE_BEGIN=`grep -E -n "Saving chunk" latest.log | sed -E -e s/:.*// -n -e 5p`
+sed -n "${LINE_BEGIN},\$p" latest.log
+
+ex:最初に見つかった17:00台のSaving chunksから最後の19:00台のSaving chunksまでを出力
+※普通にgrepだけでできそうだが最初と最後の指定がgrepだけでできるのかどうか・・・？
+　あと``より$()のほうが間違えづらい　``だと$のエスケープで\\$としないといけなかったりするので
+　$(())は計算式なので別物
+LINE_BEGIN=`grep -n "^\[17.*Saving chunks" -m 1 latest.log | sed s/:.*//`
+LINE_END=`grep -n "^\[19.*Saving chunks" latest.log | sed -e s/:.*// -n -e \\$p`
+sed -n ${LINE_BEGIN},${LINE_END}p latest.log
+
+◆grep -A の結果を加工する
+ex:15,17,19時台のログだけ検索して分割
+grep "^\[1[579]:" -C 0 latest.log > log151719.txt #さすがに別ファイルへ出力しておく
+NUM=$(grep -c "^--$" log151719.txt);BEGIN=1;for((i=1;i<=${NUM};i++));do END=$(grep -n "^--$" log151719.txt|sed -n -e "s/:.*//" -e ${i}p);sed -n ${BEGIN},${END}p log151719.txt > ${i}sep.txt;BEGIN=${END};done #さすがにスクリプトファイルに書いたほうがいいと思う
 

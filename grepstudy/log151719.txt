@@ -1,0 +1,67 @@
+[15:10:35] [Server thread/INFO]: Saving and pausing game...
+[15:10:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[15:10:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[15:10:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[15:25:43] [Server thread/INFO]: Saving and pausing game...
+[15:25:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[15:25:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[15:25:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[15:58:31] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+--
+[17:00:56] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[17:11:50] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[17:15:53] [Server thread/INFO]: Saving and pausing game...
+[17:15:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[17:15:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[17:15:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[17:18:27] [Server thread/INFO]: Villager bhr['村人'/38216, l='ServerLevel[21w06atest]', x=57.70, y=65.00, z=-743.70] died, message: '村人は壁の中で窒息した'
+[17:18:27] [Render thread/INFO]: Villager bhr['村人'/38216, l='ClientLevel', x=57.70, y=65.05, z=-743.70] died, message: '村人は死んだ'
+[17:22:47] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[17:55:12] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+--
+[19:00:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:00:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:04:21] [Render thread/INFO]: Loaded 591 advancements
+[19:05:43] [Server thread/INFO]: Saving and pausing game...
+[19:05:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:05:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:05:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:09:06] [Render thread/INFO]: Loaded 593 advancements
+[19:09:56] [Server thread/INFO]: Saving and pausing game...
+[19:09:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:09:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:09:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:12:12] [Render thread/INFO]: [CHAT] スクリーンショットをファイル名2021-02-28_19.12.12.pngとして保存しました
+[19:17:54] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[19:20:42] [Server thread/INFO]: Saving and pausing game...
+[19:20:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:20:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:20:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:21:03] [Render thread/INFO]: Loaded 593 advancements
+[19:24:27] [Server thread/INFO]: Saving and pausing game...
+[19:24:27] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:24:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:24:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:28:54] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[19:29:48] [Render thread/INFO]: Loaded 594 advancements
+[19:31:02] [Server thread/INFO]: Saving and pausing game...
+[19:31:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:31:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:31:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:33:10] [Server thread/INFO]: Villager bhr['農民'/81978, l='ServerLevel[21w06atest]', x=73.30, y=67.00, z=-766.49] died, message: '農民はゾンビに殺害された'
+[19:34:50] [Server thread/INFO]: Saving and pausing game...
+[19:34:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:34:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:34:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:36:05] [Render thread/INFO]: Loaded 595 advancements
+[19:37:53] [Server thread/INFO]: Saving and pausing game...
+[19:37:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:37:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:37:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:39:28] [Render thread/INFO]: [CHAT] スクリーンショットをファイル名2021-02-28_19.39.28.pngとして保存しました
+[19:40:04] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
+[19:44:22] [Server thread/INFO]: Saving and pausing game...
+[19:44:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:overworld
+[19:44:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_nether
+[19:44:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[21w06atest]'/minecraft:the_end
+[19:52:45] [Render thread/INFO]: [CHAT] リスポーン地点が設定されました
