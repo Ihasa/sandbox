@@ -148,5 +148,4 @@ sed -n ${LINE_BEGIN},${LINE_END}p latest.log
 ◆grep -A の結果を加工する
 ex:15,17,19時台のログだけ検索して分割
 grep "^\[1[579]:" -C 0 latest.log > log151719.txt #さすがに別ファイルへ出力しておく
-NUM=$(grep -c "^--$" log151719.txt);BEGIN=1;for((i=1;i<=${NUM};i++));do END=$(grep -n "^--$" log151719.txt|sed -n -e "s/:.*//" -e ${i}p);sed -n ${BEGIN},${END}p log151719.txt > ${i}sep.txt;BEGIN=${END};done #さすがにスクリプトファイルに書いたほうがいいと思う
-
+./sep--.sh
