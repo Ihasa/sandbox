@@ -141,9 +141,9 @@ ex:最初に見つかった17:00台のSaving chunksから最後の19:00台のSav
 ※普通にgrepだけでできそうだが最初と最後の指定がgrepだけでできるのかどうか・・・？
 　あと``より$()のほうが間違えづらい　``だと$のエスケープで\\$としないといけなかったりするので
 　$(())は計算式なので別物
-LINE_BEGIN=`grep -n "^\[17.*Saving chunks" -m 1 latest.log | sed s/:.*//`
-LINE_END=`grep -n "^\[19.*Saving chunks" latest.log | sed -e s/:.*// -n -e \\$p`
-sed -n ${LINE_BEGIN},${LINE_END}p latest.log
+LINE_BEGIN=$(./getColnum.sh "^\[17.*Saving chunks" 1 latest.log)
+LINE_END=$(./getColnum.sh "^\[19.*Saving chunks" \$ latest.log)
+./extN-M.sh $LINE_BEGIN $LINE_END latest.log
 
 ◆grep -A の結果を加工する
 ex:15,17,19時台のログだけ検索して分割
