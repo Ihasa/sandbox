@@ -1,0 +1,38 @@
+IF	IT1 
+{
+    123456
+}
+ELSE 
+IF IT2
+{
+    8584
+}
+
+IF IT3
+{
+    33221
+}
+IF IT4
+{
+    8392
+}
+IF IT5
+{
+    
+} 
+ELSE 
+IF IT6
+{
+    9910
+    AAA
+    B930
+}
+ELSE 
+IF IT7
+{
+    1010
+}
+ELSE
+{
+    9999
+}
