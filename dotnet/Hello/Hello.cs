@@ -19,40 +19,17 @@ namespace hoge
                 string filePath = "sample.xlsx";
 
                 //ブック作成
-                var book = CreateNewBook( filePath );
+                var book = ExBook.CreateNew( filePath );
 
                 //シート無しのexcelファイルは保存は出来るが、開くとエラーが発生する
-                book.CreateSheet( "newSheet" );
+                book.AddSheet( "newSheet" );
 
                 //ブックを保存
-                using( var fs = new FileStream( filePath, FileMode.Create ) ) {
-                    book.Write( fs );
-                }
+                book.SaveBook();
             }
             catch( Exception ex ) {
                 Console.WriteLine( ex );
             }
-        }
-
-                //ブック作成
-        static IWorkbook CreateNewBook( string filePath )
-        {
-            IWorkbook book;
-            var extension = Path.GetExtension( filePath );
-
-            // HSSF => Microsoft Excel(xls形式)(excel 97-2003)
-            // XSSF => Office Open XML Workbook形式(xlsx形式)(excel 2007以降)
-            if( extension == ".xls" ) {
-                book = new HSSFWorkbook();
-            }
-            else if( extension == ".xlsx" ) {
-                book = new XSSFWorkbook();
-            }
-            else {
-                throw new ApplicationException( "CreateNewBook: invalid extension" );
-            }
-
-            return book;
         }
     }
 }
