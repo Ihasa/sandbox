@@ -14,17 +14,37 @@ namespace hoge{
             workBook = iniWB;
             filePath = iniPath;
         }
-        public ExBook(string filePath){
-            //引数に指定された名前のブックが開きたい
+        public ExBook(string iniFilePath){
+            filePath = iniFilePath;
+            //引数に指定された名前のブックが開く
+            workBook = WorkbookFactory.Create(filePath);
         }
 
         public void AddSheet(string sheetName){
             workBook.CreateSheet( sheetName );
         }
 
+        public ISheet GetSheet(string sheetName){
+            return workBook.GetSheet(sheetName);
+        }
+
+        public ICellStyle GetStyle(){
+            var style = workBook.CreateCellStyle();
+            style.DataFormat = workBook.CreateDataFormat().GetFormat( "yyyy/mm/dd" );
+            return style;
+        }
+
         public void SaveBook(){
-            using( var fs = new FileStream( filePath, FileMode.Create ) ) {
-                workBook.Write(fs);
+            SaveBookAs(filePath);
+        }
+
+        public void SaveBookAs(string path){
+            try{
+                using( var fs = new FileStream( path, FileMode.Create ) ) {
+                    workBook.Write(fs);
+                }
+            } catch (Exception e){
+                throw e;
             }
         }
 
