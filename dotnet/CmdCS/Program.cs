@@ -10,6 +10,17 @@ namespace CmdCS
         static void Main(string[] args)
         {
             csGrep("\\[17:", "../grepstudy/latest.log", "n");
+            using (StreamWriter wr = new StreamWriter(File.Open("./hogehoge.txt",FileMode.CreateNew))){
+                //wr.AutoFlush = true;
+                try{
+                    Console.WriteLine(wr.AutoFlush);
+                    wr.WriteLine("HOHOHO.");
+                    //throw new Exception();
+                    //wr.Dispose();
+                }catch(Exception e){
+                    Console.WriteLine(e);
+                }
+            }
         }
 
         static List<string> findList;
