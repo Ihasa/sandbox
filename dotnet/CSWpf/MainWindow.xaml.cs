@@ -35,7 +35,7 @@ namespace CSWpf
             } else {
                 addMessage = "The name is invalid.";
             }
-            
+            this.msgBox.Text = addMessage;
         }
 
         public string addMessage{get;set;}
