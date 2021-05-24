@@ -1,0 +1,17 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Exename>CmdLib</Exename>
+    <OutputPath>LibBin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="TextCmds.cs"/>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Generic" />
+    <Reference Include="System.Text.RegularExpressions" />
+  </ItemGroup>
+
+  <Target Name="Build">
+    <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')"/>
+    <Csc TargetType="library" Sources="@(Compile)" OutputAssembly="$(OutputPath)$(Exename).dll"/>
+  </Target>
+</Project>

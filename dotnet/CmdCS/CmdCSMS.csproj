@@ -1,0 +1,16 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Exename>MSBuildCmdCS</Exename>
+    <OutputPath>MSBin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- <ProjectReference Include="..\CmdLib\CmdLibMS.csproj" /> -->
+    <!-- <ReferenceAssembly Include="../CmdLib/LibBin/CmdLib.dll" /> -->
+    <Reference Include="CmdLib" />
+    <Compile Include="Program.cs"/>
+  </ItemGroup>
+  <Target Name="Build">
+    <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')"/>
+    <Csc References="../CmdLib/LibBin/CmdLib.dll" Sources="@(Compile)" OutputAssembly="$(OutputPath)$(Exename).exe"/>
+  </Target>
+</Project>
