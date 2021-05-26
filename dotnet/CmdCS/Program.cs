@@ -8,8 +8,8 @@ namespace CmdCS
     {
         static void Main(string[] args)
         {
-            TextCmds cmds = new TextCmds("../grepstudy/latest.log");
-            cmds.csGrep("\\[17:", "n");
+            TextCmds cmds = new TextCmds("./latest.log");
+            cmds.csGrep(".", "n");
             using (StreamWriter wr = new StreamWriter(File.Open("./hogehoge.txt",FileMode.CreateNew))){
                 //wr.AutoFlush = true;
                 try{
