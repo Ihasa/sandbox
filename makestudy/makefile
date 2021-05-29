@@ -8,9 +8,9 @@ CFILES=\
 	foo/*.c\
 
 COBJS=\
-	obj/main.o\
-	obj/hoge.o\
-	obj/foo.o
+	main.o\
+	hoge.o\
+	foo.o
 
 DEST=bin
 
@@ -18,20 +18,19 @@ DEST=bin
 CC=gcc
 CFLAGS=$(INCLUDES)
 
+.SUFFIXES: .o .c
+.c.o:
+	$(CC) -c $(INCLUDES) $^
+
 all:bin/a.exe
 
 bin/a.exe:$(COBJS)
 	$(CC) $(COBJS) -o $@
 
+$(COBJS):
+
+
 .PHONY: clean objfiles
-obj/main.o:main.c
-	$(CC) $^ $(INCLUDES) -c -o $@
-
-obj/hoge.o:hoge/hoge.c
-	$(CC) $^ $(INCLUDES) -c -o $@
-
-obj/foo.o:foo/foo.c
-	$(CC) $^ $(INCLUDES) -c -o $@
 
 objfiles:
 	#-cつけないと他のファイルで定義しているような関数が見つけられない
@@ -48,4 +47,5 @@ objfiles:
 
 clean:
 	rm -f -r obj/*.o
+	rm -f *.o
 	rm -f -r bin/*
