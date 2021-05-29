@@ -23,8 +23,6 @@ all:bin/a.exe
 bin/a.exe:$(COBJS)
 	$(CC) $(COBJS) -o $@
 
-$(COBJS):
-
 
 .PHONY: clean objfiles
 
