@@ -3,11 +3,14 @@
 
 #ifdef DEF_FOO_C
 #define GLOBAL
+#define GINI(val) =val
 #else
 #define GLOBAL extern
+#define GINI(val)
 #endif
 
 GLOBAL int sum(int,int);
+GLOBAL const float pi GINI(3.14159f);
 
 #undef GLOBAL
 #endif
