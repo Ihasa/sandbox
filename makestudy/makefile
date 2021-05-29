@@ -21,16 +21,16 @@ CFLAGS=$(INCLUDES)
 all:bin/a.exe
 
 bin/a.exe:$(COBJS)
-	$(CC) $(COBJS) -o bin/a.exe
+	$(CC) $(COBJS) -o $@
 
 obj/main.o:main.c
-	$(CC) main.c $(INCLUDES) -c -o obj/main.o
+	$(CC) $^ $(INCLUDES) -c -o $@
 
 obj/hoge.o:hoge/hoge.c
-	$(CC) hoge/hoge.c $(INCLUDES) -c -o obj/hoge.o
+	$(CC) $^ $(INCLUDES) -c -o $@
 
 obj/foo.o:foo/foo.c
-	$(CC) foo/foo.c $(INCLUDES) -c -o obj/foo.o
+	$(CC) $^ $(INCLUDES) -c -o $@
 
 objfiles:
 	#-cつけないと他のファイルで定義しているような関数が見つけられない
