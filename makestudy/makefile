@@ -5,7 +5,7 @@ INCLUDES=\
 CFILES=\
 	main.c\
 	hoge/*.c\
-	foo/*.c\
+	foo/*.c
 
 COBJS=\
 	main.o\
@@ -17,11 +17,18 @@ DEST=bin
 #以下はmake暗黙の規則の変数
 CC=gcc
 CFLAGS=$(INCLUDES)
+VPATH=\
+	foo\
+	hoge
 
-all:bin/a.exe
+all:a.exe
 
-bin/a.exe:$(COBJS)
-	$(CC) $(COBJS) -o $@
+a.exe:$(COBJS)
+	cd obj;$(CC) $^ -o ../bin/$@
+
+.SUFFIXES: .o .c
+.c.o:
+	$(CC) -c $(INCLUDES) $^ -o obj/$@
 
 
 .PHONY: clean objfiles
