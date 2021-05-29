@@ -18,10 +18,6 @@ DEST=bin
 CC=gcc
 CFLAGS=$(INCLUDES)
 
-.SUFFIXES: .o .c
-.c.o:
-	$(CC) -c $(INCLUDES) $^
-
 all:bin/a.exe
 
 bin/a.exe:$(COBJS)
