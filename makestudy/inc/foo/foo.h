@@ -10,6 +10,7 @@
 #endif
 
 GLOBAL int sum(int,int);
+GLOBAL int mul(int,int);
 GLOBAL const float pi GINI(3.14159f);
 
 #undef GLOBAL

@@ -30,14 +30,17 @@ a.exe:$(COBJS) $(EXEMAINOBJ)
 
 .SUFFIXES: .o .c
 .c.o:
-	$(CC) -c $(INCLUDES) $^ -o obj/$@
+	$(CC) -c $(CFLAGS) $^ -o obj/$@
 
-test:test.exe
+test:clean test.exe
+test.exe:CFLAGS=$(INCLUDES) -ftest-coverage -fprofile-arcs
 test.exe:$(COBJS) $(TESTMAINOBJ)
-	cd obj;$(CC) $^ -lcunit -o ../test/$@
+	cd obj;$(CC) $^ -ftest-coverage -fprofile-arcs -lcunit -o ../test/$@
+	./test/test.exe
+	lcov -c -d obj -o "test/test.info"
+	genhtml -o test/coverage test/test.info
 
-.PHONY: clean objfiles
-
+.PHONY: objfiles
 objfiles:
 	#-cつけないと他のファイルで定義しているような関数が見つけられない
 	#またはmain関数がないという理由でエラーになる
@@ -51,7 +54,12 @@ objfiles:
 
 	#$(CC) foo/foo.c $(INCLUDES) -c -o obj/foo.o
 
+.PHONY: clean
 clean:
-	rm -f -r obj/*.o
+	rm -f -r obj/*
 	rm -f *.o
 	rm -f -r bin/*
+	rm -f *.gcda
+	rm -f *.gcno
+	rm -f *.info
+	rm -f -r test/*
