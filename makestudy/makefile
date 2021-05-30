@@ -1,6 +1,6 @@
 INCLUDES=\
 	-Iinc/foo\
-	-Iinc/hoge
+	-Iinc/hoge\
 
 CFILES=\
 	main.c\
@@ -8,9 +8,11 @@ CFILES=\
 	foo/*.c
 
 COBJS=\
-	main.o\
 	hoge.o\
 	foo.o
+
+EXEMAINOBJ=main.o
+TESTMAINOBJ=testmain.o
 
 DEST=bin
 
@@ -23,13 +25,16 @@ VPATH=\
 
 all:a.exe
 
-a.exe:$(COBJS)
-	cd obj;$(CC) $^ -o ../bin/$@
+a.exe:$(COBJS) $(EXEMAINOBJ)
+	cd obj;$(CC) $^ -lcunit -o ../bin/$@
 
 .SUFFIXES: .o .c
 .c.o:
 	$(CC) -c $(INCLUDES) $^ -o obj/$@
 
+test:test.exe
+test.exe:$(COBJS) $(TESTMAINOBJ)
+	cd obj;$(CC) $^ -lcunit -o ../test/$@
 
 .PHONY: clean objfiles
 
