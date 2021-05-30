@@ -14,6 +14,8 @@ COBJS=\
 EXEMAINOBJ=main.o
 TESTMAINOBJ=testmain.o
 
+CFLAGS4TEST=-ftest-coverage -fprofile-arcs
+
 DEST=bin
 
 #以下はmake暗黙の規則の変数
@@ -33,12 +35,15 @@ a.exe:$(COBJS) $(EXEMAINOBJ)
 	$(CC) -c $(CFLAGS) $^ -o obj/$@
 
 test:clean test.exe
-test.exe:CFLAGS=$(INCLUDES) -ftest-coverage -fprofile-arcs
+test.exe:CFLAGS=$(INCLUDES) $(CFLAGS4TEST)
 test.exe:$(COBJS) $(TESTMAINOBJ)
-	cd obj;$(CC) $^ -ftest-coverage -fprofile-arcs -lcunit -o ../test/$@
+	cd obj;$(CC) $^ $(CFLAGS4TEST) -lcunit -o ../test/$@
 	./test/test.exe
 	lcov -c -d obj -o "test/test.info"
 	genhtml -o test/coverage test/test.info
+
+statictest:CFLAGS4TEST+= -Dstatic=""
+statictest:test
 
 .PHONY: objfiles
 objfiles:
