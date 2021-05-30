@@ -34,6 +34,7 @@ a.exe:$(COBJS) $(EXEMAINOBJ)
 .c.o:
 	$(CC) -c $(CFLAGS) $^ -o obj/$@
 
+.PHONY:test
 test:clean test.exe
 test.exe:CFLAGS=$(INCLUDES) $(CFLAGS4TEST)
 test.exe:$(COBJS) $(TESTMAINOBJ)
@@ -42,6 +43,7 @@ test.exe:$(COBJS) $(TESTMAINOBJ)
 	lcov -c -d obj -o "test/test.info"
 	genhtml -o test/coverage test/test.info
 
+.PHONY:statictest
 statictest:CFLAGS4TEST+= -Dstatic=""
 statictest:test
 
