@@ -19,7 +19,7 @@ CFLAGS4TEST=-ftest-coverage -fprofile-arcs
 DEST=bin
 
 #以下はmake暗黙の規則の変数
-CC=gcc
+CC=g++
 CFLAGS=$(INCLUDES)
 VPATH=\
 	foo\
@@ -28,7 +28,7 @@ VPATH=\
 all:a.exe
 
 a.exe:$(COBJS) $(EXEMAINOBJ)
-	cd obj;$(CC) $^ -lcunit -o ../bin/$@
+	cd obj;$(CC) $^ -o ../bin/$@
 
 .SUFFIXES: .o .c
 .c.o:
@@ -46,6 +46,16 @@ test.exe:$(COBJS) $(TESTMAINOBJ)
 .PHONY:statictest
 statictest:CFLAGS4TEST+= -Dstatic=""
 statictest:test
+
+.PHONY:test_g
+test_g:clean test_g.exe
+test_g.exe:CFLAGS=$(INCLUDES) $(CFLAGS4TEST)
+test_g.exe:$(COBJS) testmaing.o
+	cd obj;$(CC) $^ $(CFLAGS4TEST) -L /usr/local/lib -lgtest -lgtest_main -o ../test/$@
+	./test/test_g.exe --gtest_output="xml:./report.xml"
+	lcov -c -d obj -o "test/test_g.info"
+	lcov -r test/test_g.info */googletest/* */c++/* */usr/local/* -o test/test_g_filtered.info
+	genhtml -o test/coverage_g test/test_g_filtered.info
 
 .PHONY: objfiles
 objfiles:

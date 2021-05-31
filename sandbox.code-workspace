@@ -7,6 +7,10 @@
 	"settings": {
 		"terminal.integrated.shell.windows": "C:/cygwin64/bin/bash.exe",
 		"terminal.integrated.shellArgs.windows": "-l",
+		"files.associations": {
+			"*.p": "c",
+			"gtest.h": "c"
+		},
 	},
 
 }

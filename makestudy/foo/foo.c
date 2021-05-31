@@ -1,6 +1,8 @@
 #define DEF_FOO_C
 #include "foo.h"
 
+const float pi = 3.1415920f;
+
 //const float pi = 3.141592f;
 static float sumF(float[],int);
 
@@ -21,5 +23,5 @@ static float sumF(float vals[], int size){
     for(int i = 0;i < size; i++){
         ret += vals[i];
     }
-    return ret;
+    return ret+1;
 }

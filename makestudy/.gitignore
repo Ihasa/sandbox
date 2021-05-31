@@ -1,6 +1,7 @@
 *.o
 *.exe
-coverage/
+coverage*/
 *.gcda
 *.gcno
 *.info
+report.xml
